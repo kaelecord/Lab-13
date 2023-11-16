@@ -11,9 +11,9 @@ import networkx as nx
 from ast import literal_eval
 import streamlit as st
 
-full_data = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Lab 13\\data\\friends_transcript_data.csv')
-speaker = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Lab 13\\data\\speaker_cleaned_data.csv')
-char_net = pd.read_csv('C:\\Users\\kaele\\OneDrive\\Documents\\IUPUI\\Fall 2023\\I501 - Intro to Informatics\\Lab 13\\data\\character_network_cleaned_data.csv')
+full_data = pd.read_csv('data/friends_transcript_data.csv')
+speaker = pd.read_csv('data/speaker_cleaned_data.csv')
+char_net = pd.read_csv('data/character_network_cleaned_data.csv')
 
 def create_network_dict(df):
     speakers = set(df['speaker'])
