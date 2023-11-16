@@ -10,7 +10,6 @@ import plotly.graph_objects as go
 import networkx as nx
 from ast import literal_eval
 import streamlit as st
-import scipy
 
 full_data = pd.read_csv('data/friends_transcript_data.csv')
 speaker = pd.read_csv('data/speaker_cleaned_data.csv')
