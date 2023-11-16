@@ -169,7 +169,7 @@ with exercise2:
     
     st.subheader("Select an episode or scene to see the character network!")
     col_1, col_2 = st.columns(2)
-    season_choice = col_1.selectbox('Season:', options = get_seasons(), index = 0)
+    season_choice = col_1.selectbox('Season:', options = get_seasons(), index = 1)
     episode_choice = col_2.selectbox('Episode:', options = get_episodes(season=season_choice), index = 0)
     st.write("Select Characters you want to know more about (this will highlight them in the below network)")
     character_choice = st.multiselect('Character:', options= get_speakers(season_choice, episode_choice))
